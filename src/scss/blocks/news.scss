@@ -1,0 +1,24 @@
+.news {
+    padding: 7.1rem 0;
+    color: $dark;
+}
+
+.news__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news__title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-family: $playfair;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.news__form {
+    max-width: 46rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}

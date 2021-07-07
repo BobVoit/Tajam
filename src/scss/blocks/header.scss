@@ -1,0 +1,141 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 67rem;
+    background: url(../img/header-background.webp) no-repeat;
+}
+
+.header__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 1rem;
+
+        user-select: none;
+        font-size: 3rem;
+        font-weight: 100;
+        text-transform: lowercase;
+
+        background: $text-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.header__navbar {
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__item {
+    margin-left: 2.5rem;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    a {
+        color: $white;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 900;
+
+        transition: color .5s ease;
+        
+        &:hover {
+            color: $sky-blue;
+        }
+    }
+}
+
+.header__burger {
+    width: 4rem;
+    height: 3rem;
+    position: relative;
+    display: none;
+
+    cursor: pointer;
+
+    &::after,
+    &::before {
+        content: "";
+    }
+
+    &::after,
+    &::before,
+    span {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: $white;
+    }
+
+    span {
+        left: 0;
+        top: 50%;
+
+        transform: translate(0, -50%);
+    }
+
+    &::after {
+        left: 0;
+        bottom: 0;
+    }
+
+    @media (max-width: $tablet) {
+        display: block;
+    }
+}
+
+.header__body {
+    margin-top: 19.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        margin-top: 12rem;
+    }
+}
+
+.header__title {
+    font-family: $playfair;
+    font-size: 3.2rem;
+    color: $white;
+    font-weight: 900;
+    text-align: center;
+}
+
+.header__line {
+    margin-top: 2.7rem;
+}
+
+.header__text {
+    margin-top: 3rem;
+
+    text-align: center;
+    font-size: 1.4rem;
+    color: $white;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.header__link {
+    margin-top: 5.3rem;
+}

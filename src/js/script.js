@@ -1,0 +1,2 @@
+require('./menuBurger');
+require('./teamSlider');

@@ -1,0 +1,21 @@
+.flex {
+    width: 100%;
+    display: flex;
+
+    &--sb {
+        justify-content: space-between;
+    }
+
+}
+
+.col {
+    width: 100%;
+
+    &--33p {
+        width: 33.333%;
+    }
+
+    &--25p {
+        width: 25%;
+    }
+}

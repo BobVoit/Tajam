@@ -1,0 +1,31 @@
+.btn {
+    padding: .875em;
+    display: inline-block;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: $hammersmith-one;
+    color: $sky-blue;
+    
+    border: 1px solid $sky-blue;
+    border-radius: 2px;
+    background-color: transparent;
+
+    transition: 
+        box-shadow .3s ease, 
+        background-color .3s ease,
+        color .3s ease;
+
+    &:hover {
+        box-shadow: 0px 2px 28px 3px rgba(0, 224, 208, 0.2) inset;
+    }
+
+    &:active {
+        background-color: darken($sky-blue, .1);
+        color: $white;
+    }
+
+    &--wide {
+        padding: .75em 2.25em;
+    }
+}
